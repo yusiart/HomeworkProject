@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [SerializeField] private int _health;
-    [SerializeField] private int _damage;
     [SerializeField] private Weapoon _weapoon;
     [SerializeField] protected Transform _shootPooint;
 
@@ -53,9 +52,9 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void SetBulletDirection(ref Vector2 bulletdirection)
+    public void SetBulletDirection(ref Vector2 bulletDirection)
     {
         float xBulletPosition = _shootPooint.transform.position.x - transform.position.x;
-        bulletdirection = new Vector2(xBulletPosition, 0);
+        bulletDirection = new Vector2(xBulletPosition, 0);
     }
 }

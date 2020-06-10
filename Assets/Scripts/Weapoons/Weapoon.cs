@@ -11,12 +11,6 @@ public abstract class Weapoon : MonoBehaviour
 
     private Vector2 _bulletDirection;
 
-    public Vector2 BulletDirection
-    {
-        get => _bulletDirection;
-        protected set => _bulletDirection = value;
-    }
-
     public virtual void Shoot(Transform shootPoint, Vector2 bulletDirection)
     {
     }

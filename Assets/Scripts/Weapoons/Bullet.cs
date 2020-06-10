@@ -10,16 +10,12 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float _maxLifeTime;
 
     private Vector2 _bulletDirection;
-    private Riffle _riffle;
     private float _activeTime;
 
-    private void Start()
-    {
-        _bulletDirection = GetComponent<Riffle>().BulletDirection;
-    }
 
     private void Update()
     {
+        Debug.Log(_bulletDirection);
         _activeTime += Time.deltaTime;
         transform.Translate(_bulletDirection * (_speed * Time.deltaTime), Space.Self);
 
@@ -36,5 +32,10 @@ public class Bullet : MonoBehaviour
             enemy.ApplyDamage(_damage);
             Destroy(gameObject);
         }
+    }
+
+    public void SetDirection(Vector2 bulletDirection)
+    {
+        _bulletDirection = bulletDirection;
     }
 }

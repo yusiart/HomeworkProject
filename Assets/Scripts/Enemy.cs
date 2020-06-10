@@ -5,10 +5,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int _health;
     [SerializeField] private int _reward;
+    [SerializeField] private int _healthCount;
 
+    private int _health;
     private Player _target;
+
+    private void OnEnable()
+    {
+        _health = _healthCount;
+    }
 
     private void Start()
     {
