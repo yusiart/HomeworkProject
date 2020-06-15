@@ -9,7 +9,5 @@ public abstract class Weapoon : MonoBehaviour
     [SerializeField] protected Bullet _bullet;
     [SerializeField] protected float _bulletSpeed = 10;
 
-    private Vector2 _bulletDirection;
-
     public abstract void Shoot(Transform shootPoint, Vector2 bulletDirection);
 }

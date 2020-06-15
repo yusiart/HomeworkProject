@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_bulletDirection);
         _activeTime += Time.deltaTime;
         transform.Translate(_bulletDirection * (_speed * Time.deltaTime), Space.Self);
 
