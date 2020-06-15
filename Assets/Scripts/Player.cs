@@ -23,9 +23,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            SetBulletDirection(ref _bulletDirection);
+            _bulletDirection = SetBulletDirection();
             _weapoon.Shoot(_shootPooint, _bulletDirection);
         }
     }
@@ -52,9 +52,9 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void SetBulletDirection(ref Vector2 bulletDirection)
+    public Vector2 SetBulletDirection()
     {
         float xBulletPosition = _shootPooint.transform.position.x - transform.position.x;
-        bulletDirection = new Vector2(xBulletPosition, 0);
+        return new Vector2(xBulletPosition, 0);
     }
 }

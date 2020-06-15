@@ -11,7 +11,5 @@ public abstract class Weapoon : MonoBehaviour
 
     private Vector2 _bulletDirection;
 
-    public virtual void Shoot(Transform shootPoint, Vector2 bulletDirection)
-    {
-    }
+    public abstract void Shoot(Transform shootPoint, Vector2 bulletDirection);
 }

@@ -68,6 +68,7 @@
      <Compile Include="Assets\MainAsset\DemoScene\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Canvas\GoldDisplay.cs" />
      <Compile Include="Assets\Scripts\Canvas\HealthDisplay.cs" />
+     <Compile Include="Assets\Scripts\Canvas\Menu.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

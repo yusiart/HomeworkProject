@@ -11,6 +11,11 @@ public class Enemy : MonoBehaviour
     private int _health;
     private Player _target;
 
+    public Player Target
+    {
+        get => _target;
+    }
+
     private void OnEnable()
     {
         _health = _healthCount;
@@ -19,11 +24,6 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         _target = FindObjectOfType<Player>();
-    }
-
-    public Player Target
-    {
-        get => _target;
     }
 
     public void ApplyDamage(int damage)

@@ -1796,7 +1796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _container: {fileID: 2131235530}
-  _campacity: 5
+  _campacity: 4
   _points:
   - {fileID: 1577901199}
   - {fileID: 1508790389}
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   _enemyPrefab:
   - {fileID: 9154986765233036069, guid: ba61c6041034548ae824689cdc0ef513, type: 3}
   - {fileID: 4268243321630405119, guid: 4afa3ec3b8e6248a19bb5ffc9df46a8d, type: 3}
-  _timeToSpawn: 6
+  _timeToSpawn: 3
 --- !u!1 &1593801516
 GameObject:
   m_ObjectHideFlags: 0

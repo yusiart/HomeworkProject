@@ -33,6 +33,7 @@
           <e p="Canvas" t="Include">
             <e p="GoldDisplay.cs" t="Include" />
             <e p="HealthDisplay.cs" t="Include" />
+            <e p="Menu.cs" t="Include" />
           </e>
           <e p="Enemy.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />
